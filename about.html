@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Wizard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar sticky-navbar">
+  <div class="logo">
+    <a href="index.html">
+    <img src="images/logo.png" alt="3D Wizard Logo">
+  </a>
+  </div>
+
+  <!-- Add Hamburger Menu Button -->
+  <button class="hamburger-menu" id="hamburger-menu">
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+  </button>
+
+  <nav class="nav-links" id="nav-links">
+    <a href="index.html#technologies">Services</a>
+    <a href="index.html#industries">Projects</a>
+    <a href="about.html">About us</a>
+    <a href="contact.html">Contact us</a>
+  </nav>
+
+  <div class="nav-actions">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScssLR4UCTUzuNzCWr-VhiALV5je6kcn4MYhheHP6SV69TFjg/viewform?usp=sharing&ouid=117469667827450113076">
+      <button class="primary-btn">⬆ Start your print</button>
+    </a>
+  </div>
+</header>
+
+<a 
+  href="https://wa.me/message/UKIWKUNXZPG2N1" 
+  class="whatsapp-float" 
+  target="_blank">
+  <img 
+    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+    alt="WhatsApp">
+</a>
+
+<!-- ABOUT HERO -->
+<section class="about-hero">
+  <div class="about-hero-left">
+    <h1>About Us</h1>
+  </div>
+
+  <div class="about-hero-right">
+    <img src="images/aboutus1.png" alt="3D Printing"/>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-us">
+  <h2>Why Us?</h2>
+  <p class="why-desc">
+    Specialising in production-grade parts, we deliver unique designs to
+    our customers using a wide range of 3D Printing technologies.
+  </p>
+
+  <p class="why-long">
+    Orders are placed via our online portal and manufactured to exact
+    standards with precision and efficiency. Our service allows customers
+    to get their products to market faster, disrupting traditional
+    manufacturing methods. Our many clients vary across industries such
+    as engineering, automotive, product design, architecture, art, film
+    and more.
+  </p>
+
+  <div class="why-cards">
+    <div class="why-card">
+      <h4>Our mission is honest</h4>
+      <p>
+        Many customers come to us with limited knowledge of 3D printing
+        and we guide them to the best solutions.
+      </p>
+    </div>
+
+    <div class="why-card">
+      <h4>Our mission is honest</h4>
+      <p>
+        Many customers come to us with limited knowledge of 3D printing
+        and we guide them to the best solutions.
+      </p>
+    </div>
+
+    <div class="why-card">
+      <h4>Our mission is honest</h4>
+      <p>
+        Many customers come to us with limited knowledge of 3D printing
+        and we guide them to the best solutions.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FULL WIDTH IMAGE -->
+<section class="full-image">
+  <img src="images/aboutus2.png" alt="3D Printing Process"/>
+</section>
+
+<!-- BLUE STATEMENT -->
+<section class="blue-statement">
+  <h2>
+    We Bring Ideas to Life with Precision <br/>
+    3D Printing for Designers, Engineers, and Innovators
+  </h2>
+</section>
+
+<!-- FOUNDERS STATEMENT -->
+<section class="founders">
+  <h2>Founders Statement</h2>
+
+  <p>
+    We live and breathe innovation. Our commitment is rooted in providing
+    reliable, precise, and accessible additive manufacturing solutions
+    that empower designers, engineers, and businesses.
+  </p>
+
+  <p>
+    From concept to production, we help transform ideas into tangible
+    reality while maintaining uncompromised quality and efficiency.
+  </p>
+
+  <p>
+    Thank you for being part of this journey. Let’s make something amazing together.
+  </p>
+
+  <strong>— The 3D Wizard Team</strong>
+</section>
+
+<!-- HISTORY -->
+<section class="history">
+  <div class="history-img">
+    <img src="images/aboutus3.png" alt="Our History"/>
+  </div>
+
+  <div class="history-text">
+    <h2>Our History</h2>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="join-btn">
+  <button class="primary-btn large">Join us</button>
+</div>
+
+<!-- FREE OFFER SECTION -->
+<section class="free-offer">
+  <span class="offer-badge">🎁 Limited Time offer</span>
+
+  <h2>
+    Discover <span>3D Wizard</span> with a Free Starter Print
+  </h2>
+
+  <p class="offer-desc">
+    Experience the magic of 3D printing with us. A small gift to kickstart
+    your journey with 3D Wizard.
+  </p>
+
+  <div class="offer-card">
+    <h3>Claim your Freebie</h3>
+    <p class="sub">📦 No cost, no surprises — just print joy.</p>
+
+    <button class="primary-btn"
+  onclick="sendToWhatsApp(this)"
+  data-name="Get My Free Product"
+  
+  style="cursor:pointer;"
+>
+   Get My Free Product
+</button>
+
+    <small>🔒 We respect your privacy. No spam, unsubscribe anytime.</small>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+  <div class="newsletter-text">
+    <h3>Be the first to know</h3>
+    <p>
+      Sign up for our newsletter to receive all the latest product updates,
+      get helpful tips and insights from the team and enjoy direct access
+      to all our latest offers and discounts.
+    </p>
+  </div>
+
+  <div class="newsletter-form">
+    <input type="email" placeholder="Enter your Email" />
+    <button class="primary-btn">Subscribe</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-logo">
+      <img src="images/logo1.png" alt="3D Wizard" />
+    </div>
+
+    <div class="footer-links">
+      <h4>More</h4>
+      <a href="#">3D Wizard Blog</a>
+      <a href="#">Knowledge Base</a>
+      <a href="#">Materials</a>
+      <a href="#">About Us</a>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>
+        📍 3D Wizard, Shop no 1, Iskcon Temple Rd, Ravet,
+        Pimpri-Chinchwad, Maharashtra 411044
+      </p>
+      <p>✉️ 3dwizardhub@gmail.com</p>
+      <p>📞 7506120031</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="socials">
+      <span>Follow us</span>
+      <!-- <i>📘</i>
+      <i>📸</i>
+      <i>💼</i>
+      <i>🐦</i> -->
+       <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+   <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+  <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+    </div>
+
+    <div class="legal">
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Terms to use</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Data Protection Policy</a>
+      <a href="#">Confidentiality notice</a>
+    </div>
+
+    <small>© 2025 3D Wizard</small>
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

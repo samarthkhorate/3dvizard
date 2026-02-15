@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Wizard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar sticky-navbar">
+  <div class="logo">
+   <a href="index.html">
+    <img src="images/logo.png" alt="3D Wizard Logo">
+  </a>
+  </div>
+
+  <!-- Add Hamburger Menu Button -->
+  <button class="hamburger-menu" id="hamburger-menu">
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+  </button>
+
+  <nav class="nav-links" id="nav-links">
+    <a href="index.html#technologies">Services</a>
+    <a href="index.html#industries">Projects</a>
+    <a href="about.html">About us</a>
+    <a href="contact.html">Contact us</a>
+</nav>
+
+  <div class="nav-actions">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScssLR4UCTUzuNzCWr-VhiALV5je6kcn4MYhheHP6SV69TFjg/viewform?usp=sharing&ouid=117469667827450113076">
+      <button class="primary-btn"> Start your print</button>
+    </a>
+  </div>
+</header>
+
+<a 
+  href="https://wa.me/message/UKIWKUNXZPG2N1" 
+  class="whatsapp-float" 
+  target="_blank">
+  <img 
+    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+    alt="WhatsApp">
+</a>
+
+<!-- PAGE -->
+<section class="print-detail">
+  <h1>Our 3D Printing Technologies</h1>
+
+  <!-- FDM -->
+  <div class="print-card">
+    <img src="images/fdm.png" />
+    <div class="print-content">
+      <h2>FDM <span>(Fused Deposition Modeling)</span></h2>
+
+      <h4>How it works?</h4>
+      <p>
+        FDM melts and extrudes thermoplastic filament through a heated nozzle,
+        layer by layer. It’s ideal for functional prototypes and low-cost parts
+        using materials like PLA, ABS, and PETG.
+      </p>
+
+      <h4>Advantages</h4>
+      <ul>
+        <li>Cost-effective for prototypes</li>
+        <li>Wide range of thermoplastics (PLA, ABS)</li>
+        <li>Easy to use and maintain</li>
+      </ul>
+
+      <h4>Disadvantages</h4>
+      <ul>
+        <li>Lower surface quality</li>
+        <li>Weaker layer adhesion</li>
+        <li>Visible layer lines</li>
+      </ul>
+
+      
+      <button class="primary-btn"
+  onclick="sendToWhatsApp(this)"
+  data-name="FDM (Fused Deposition Modeling)"
+  
+  style="cursor:pointer;"
+>
+   Order Now
+</button>
+    </div>
+  </div>
+
+  <!-- SLA -->
+  <div class="print-card">
+    <img src="images/sla.png" />
+    <div class="print-content">
+      <h2>SLA <span>(Stereolithography)</span></h2>
+
+      <h4>How it works?</h4>
+      <p>
+        SLA uses a UV laser to cure liquid resin into hardened plastic,
+        layer by layer. It produces high-detail, smooth surface parts.
+      </p>
+
+      <h4>Advantages</h4>
+      <ul>
+        <li>High-resolution prints</li>
+        <li>Smooth surface finish</li>
+        <li>Great for miniatures and dental models</li>
+      </ul>
+
+      <h4>Disadvantages</h4>
+      <ul>
+        <li>Resin is messy and toxic</li>
+        <li>Post-curing required</li>
+        <li>Fragile compared to FDM</li>
+      </ul>
+
+       <button class="primary-btn"
+  onclick="sendToWhatsApp(this)"
+  data-name="SLA (Stereolithography)"
+  
+  style="cursor:pointer;"
+>
+   Order Now
+</button>
+    </div>
+  </div>
+
+  <!-- SLS -->
+  <div class="print-card">
+    <img src="images/sls.png" />
+    <div class="print-content">
+      <h2>SLS <span>(Selective Laser Sintering)</span></h2>
+
+      <h4>How it works?</h4>
+      <p>
+        SLS fuses powdered nylon using a high-powered laser to build strong,
+        durable parts. No support structures are needed.
+      </p>
+
+      <h4>Advantages</h4>
+      <ul>
+        <li>No support structures needed</li>
+        <li>Strong, functional parts</li>
+        <li>Complex geometries possible</li>
+      </ul>
+
+      <h4>Disadvantages</h4>
+      <ul>
+        <li>Rough surface finish</li>
+        <li>Expensive machines</li>
+        <li>Post-processing required</li>
+      </ul>
+
+      <button class="primary-btn"
+  onclick="sendToWhatsApp(this)"
+  data-name="SLS (Selective Laser Sintering)"
+  
+  style="cursor:pointer;"
+>
+   Order Now
+</button>
+    </div>
+  </div>
+
+  <!-- MJF -->
+  <div class="print-card">
+    <img src="images/mjf.png" />
+    <div class="print-content">
+      <h2>MJF <span>(Multi Jet Fusion)</span></h2>
+
+      <h4>How it works?</h4>
+      <p>
+        MJF jets a binding agent onto nylon powder and fuses it using infrared
+        energy, enabling fast production of functional end-use parts.
+      </p>
+
+      <h4>Advantages</h4>
+      <ul>
+        <li>Strong and functional parts</li>
+        <li>Fast production speeds</li>
+        <li>Uniform mechanical properties</li>
+      </ul>
+
+      <h4>Disadvantages</h4>
+      <ul>
+        <li>Expensive setup</li>
+        <li>Limited material options</li>
+        <li>Grey surface finish unless post-processed</li>
+      </ul>
+
+      <button class="primary-btn"
+  onclick="sendToWhatsApp(this)"
+  data-name="MJF (Multi Jet Fusion)"
+  
+  style="cursor:pointer;"
+>
+   Order Now
+</button>
+    </div>
+  </div>
+
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+  <div class="newsletter-text">
+    <h3>Be the first to know</h3>
+    <p>
+      Sign up for our newsletter to receive all the latest product updates,
+      get helpful tips and insights from the team and enjoy direct access
+      to all our latest offers and discounts.
+    </p>
+  </div>
+
+  <div class="newsletter-form">
+    <input type="email" placeholder="Enter your Email" />
+    <button class="primary-btn">Subscribe</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-logo">
+      <img src="images/logo1.png" alt="3D Wizard" />
+    </div>
+
+    <div class="footer-links">
+      <h4>More</h4>
+      <a href="#">3D Wizard Blog</a>
+      <a href="#">Knowledge Base</a>
+      <a href="#">Materials</a>
+      <a href="#">About Us</a>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>
+        📍 3D Wizard, Shop no 1, Iskcon Temple Rd, Ravet,
+        Pimpri-Chinchwad, Maharashtra 411044
+      </p>
+      <p>✉️ 3dwizardhub@gmail.com</p>
+      <p>📞 7506120031</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="socials">
+      <span>Follow us</span>
+      <!-- <i>📘</i>
+      <i>📸</i>
+      <i>💼</i>
+      <i>🐦</i> -->
+       <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+   <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+  <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+    </div>
+
+    <div class="legal">
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Terms to use</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Data Protection Policy</a>
+      <a href="#">Confidentiality notice</a>
+    </div>
+
+    <small>© 2025 3D Wizard</small>
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
